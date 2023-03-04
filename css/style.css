@@ -1,0 +1,147 @@
+@import url("reset.css");
+
+/* 
+	static- поведение по умолчанию
+	relative
+	absolute
+	fixed
+	sticky
+*/
+
+/* MENU */
+.menu {
+  padding: 20px 40px;
+  background: #ed0707;
+  position: fixed;
+  top: 50%;
+  margin-top: -120px;
+  border: 2px solid #000;
+  border-radius: 3px;
+}
+.menu > ul > li a {
+  text-decoration: none;
+  color: bisque;
+}
+
+.menu_list {
+	display: flex;
+	flex-flow: column;
+	gap: 50px;
+	font-size: 32px;
+	
+}
+
+/* Header */
+
+.header {
+  margin: 0 auto;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+.banner {
+  background: #000;
+  color: aliceblue;
+  padding: 30px;
+}
+
+.banner h1 {
+  font-size: 32px;
+  text-align: center;
+}
+.header_box {
+  background: darkorange;
+}
+
+.header_text {
+  width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  padding: 20px 0;
+  font-size: 24px;
+  font-weight: 500;
+  justify-content: space-evenly;
+}
+
+.header_box > ul > li a {
+  text-decoration: none;
+  color: white;
+}
+
+/* ___________________________________++ */
+
+.container {
+  max-width: 1140px;
+  padding: 100px 0;
+  margin: 0 auto;
+  background: rgb(208, 207, 207);
+}
+
+.gallery {
+  width: 800px;
+  margin: 0 auto;
+  position: relative;
+  font-size: 0;
+  margin-bottom: 60px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery-text {
+  background: rgba(1, 9, 18, 0.5);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  font-size: 40px;
+  color: aliceblue;
+  display: none;
+  text-align: center;
+  overflow: hidden;
+  height: 100px;
+  margin-top: -50px;
+}
+
+.gallery:hover .gallery-text {
+  display: block;
+}
+
+.gallery-text span {
+  color: rgb(255, 145, 0);
+  font-size: 60px;
+}
+
+/* Block 2 */
+
+.block_2 {
+	margin: 0 auto;
+	max-width: 800px;
+	position: relative;
+}
+
+.block_2 img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.block_2:hover .block_2_text {
+	display: block;
+}
+
+.block_2_text {
+	font-size: 34px;
+	line-height: 36px;
+	font-weight: 400;
+	padding: 30px 0;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	background: rgba(1, 9, 18, 0.5);
+	display: none;
+	margin-top: -85px;
+	color: azure;
+}
